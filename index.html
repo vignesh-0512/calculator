@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <div class="calculator">
+        <input type="text" class="calculator-screen" id="screen" disabled></input>
+        <div class="calculator-keys">
+            <button class="operator" value="+" onclick="appendToScreen('+')">+</button>
+            <button  class="operator" value="-" onclick="appendToScreen('-')">-</button>
+            <button  class="operator" value="*" onclick="appendToScreen('*')">*</button>
+            <button   class="operator" value="/" onclick="appendToScreen('/')">/</button>
+            <button value="7" onclick="appendToScreen('7')">7</button>
+            <button value="8" onclick="appendToScreen('8')">8</button>
+            <button value="9" onclick="appendToScreen('9')">9</button>
+            <button  class="operator" value="sqrt" onclick="calculateSqrt()">√</button>
+            <button value="4" onclick="appendToScreen('4')">4</button>
+            <button value="5" onclick="appendToScreen('5')">5</button>
+            <button value="6" onclick="appendToScreen('6')">6</button>
+            <button  class="operator" value="^" onclick="appendToScreen('**')">^</button>
+            <button value="1" onclick="appendToScreen('1')">1</button>
+            <button value="2" onclick="appendToScreen('2')">2</button>
+            <button value="3" onclick="appendToScreen('3')">3</button>
+            <button value="sin" onclick="calculateTrig('sin')">sin</button>
+            <button value="0" onclick="appendToScreen('0')">0</button>
+            <button value="." onclick="appendToScreen('.')">.</button>
+            <button class="equal-sign" value="=" onclick="calculate()">=</button>
+            <button class="all-clear" value="all-clear" onclick="clearScreen()">AC</button>
+            <button  class="operator" value="cos" onclick="calculateTrig('cos')">cos</button>
+            <button  class="operator" value="Tan" onclick="calculateTrig('tan')">Tan</button>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
