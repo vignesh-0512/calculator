@@ -8,8 +8,11 @@ function clearScreen(){
 
 function calculate(){
     try{
-        let result = eval(document.getElementById('screen').value);
+        let expression = document.getElementById('screen').value;
+        expression = expression.replace(/\^/g,'**');
+        let result = eval(expression);
         document.getElementById('screen').value = result;
+        
     }catch(e){
         alert("Error");
     }
