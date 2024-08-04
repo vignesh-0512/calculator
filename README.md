@@ -16,16 +16,6 @@ Usage
 2. Open the index.html file in your web browser.
 
 Project Structure
-scientific-calculator/
-│
-├── index.html          # Main HTML file
-├── css/
-│   └── style.css       # CSS file for styling
-└── js/
-    └── script.js       # JavaScript file for calculator logic
-
-
-
 index.html
 
 This file contains the structure of the calculator, including the display screen and the buttons for different operations.
